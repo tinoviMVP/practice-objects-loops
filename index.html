@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Management App</title>
+  <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
+</head>
+
+<body>
+  <header>
+    <h1>Goal Management App</h1>
+  </header>
+
+  <main>
+    <section id="goal-section">
+      <h2>Create a New Goal</h2>
+      <form id="goal-form">
+        <label for="goal-title">Goal Title:</label>
+        <input type="text" id="goal-title" name="goal-title" required>
+
+        <label for="goal-description">Description:</label>
+        <textarea id="goal-description" name="goal-description" rows="4"></textarea>
+
+        <label for="due-date">Due Date:</label>
+        <input type="date" id="due-date" name="due-date" required>
+
+        <button type="submit">Create Goal</button>
+      </form>
+    </section>
+
+    <div class="overlay">
+      <div class="modal">
+        <form id="goal-edit-form">
+          <label for="goal-title">Goal Title:</label>
+          <input type="text" id="goal-title" name="goal-title" required>
+  
+          <label for="goal-description">Description:</label>
+          <textarea id="goal-description" name="goal-description" rows="4"></textarea>
+  
+          <label for="due-date">Due Date:</label>
+          <input type="date" id="due-date" name="due-date" required>
+  
+          <button type="submit">Create Goal</button>
+          <button class="close-modal-btn" type="submit">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="goal-list">
+      <h2>Your Goals</h2>
+      <ul id="goals">
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Your Goal Management App</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
